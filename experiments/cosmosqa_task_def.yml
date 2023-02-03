@@ -1,0 +1,17 @@
+cosmosqa:
+  enable_san: false
+  data_format: PremiseAndMultiHypothesis
+  #data_format: ClozeChoice
+  metric_meta:
+  - ACC
+  #loss: CeCriterion
+  loss: RankCeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class: 1
+  task_type: Ranking
+  #task_type: Classification
+  split_names:
+    - train
+    - dev
+

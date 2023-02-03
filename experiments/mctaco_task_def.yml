@@ -1,0 +1,62 @@
+mctaco:
+  enable_san: false
+  data_format: PremiseAndOneHypothesis
+  metric_meta:
+  - ACC
+  - F1
+  #loss: CeCriterion
+  #kd_loss: MseCriterion
+  #adv_loss: SymKlCriterion
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: HLCriterion
+  #adv_loss: SymKlCriterion
+  n_class: 2
+  task_type: Classification
+  split_names:
+    - train
+    - dev
+timebank:
+  enable_san: false
+  data_format: PremiseAndOneHypothesis
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: HLCriterion
+  n_class: 2
+  task_type: Classification
+  split_names:
+    - train
+    - dev
+cosmosqa:
+  enable_san: false
+  data_format: PremiseAndMultiHypothesis
+  #data_format: ClozeChoice
+  metric_meta:
+  - ACC
+  #loss: CeCriterion
+  #loss: MseCriterion 
+  loss: RankCeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class: 1
+  task_type: Ranking
+  #task_type: Classification
+  split_names:
+    - train
+    - dev
+
+matres:
+  enable_san: false
+  data_format: PremiseOnly
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: HLCriterion
+  n_class: 4
+  task_type: Classification
+  split_names:
+    - train
+    - dev

@@ -1,0 +1,14 @@
+matres:
+  enable_san: false
+  data_format: PremiseOnly
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: HLCriterion
+  n_class: 2
+  task_type: Classification
+  split_names:
+    - train
+    - dev
+
