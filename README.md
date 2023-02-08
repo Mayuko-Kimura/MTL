@@ -45,7 +45,8 @@ MC-TACOで性能評価する際に使用。
 例えば上のコマンド実行すると、data_mctacoの下にalbert-xxlarge-v2というフォルダができる。
 
 ＊複数のデータをマルチタスク学習させる場合は、上記フォルダにデータをまとめる必要がある。
-（mv data_cosmosqa/albert-xxlarge-v2/* data_mctaco/albert-xxlarge-v2/）
+
+（`mv data_cosmosqa/albert-xxlarge-v2/* data_mctaco/albert-xxlarge-v2/`）
 
 マルチタスク学習させるときの例：
 
