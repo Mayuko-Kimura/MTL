@@ -40,7 +40,7 @@ MC-TACOで性能評価する際に使用。
 
 `python prepro_std.py --model albert-xxlarge-v2 --root data_mctaco --task_def experiments/mctaco_task_def.yml`
 
-`python prepro_std.py --model albert-xxlarge-v2 --root data_ranking --task_def experiments/cosmosqa_task_def.yml`
+`python prepro_std.py --model albert-xxlarge-v2 --root data_cosmosqa --task_def experiments/cosmosqa_task_def.yml`
 
 例えば上のコマンド実行すると、data_mctacoの下にalbert-xxlarge-v2というフォルダができる。
 
